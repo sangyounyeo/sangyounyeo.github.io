@@ -9,6 +9,8 @@
   --h2left: 50.5%;
   --h2fontsize: 30px;
 
+  --h3fontsize: 28px;
+
   --pagewidth: 1250px;
   
   --logoheight: -6px;
@@ -46,6 +48,7 @@
 
     --navbarright: 5%;
     --logoleftmargin: 7%;
+    --h3fontsize: 2.7vw;
   }
 
 }
@@ -56,12 +59,17 @@
     --logoleftmargin: auto;
  
     --fontsize: 17px;
-    
+    --h1top: 10vw;
+    --h2top: 20vw;
+    --h2fontsize: 2.7vw;
+    --h2left: 46.5%;
     --navspacing: 3vw;
     --float: ;
     --textposition: center;
     --navbarright: auto;
     --navbarheight: 15px;
+    --h3fontsize: 2.7vw;
+    
   }
 }
 
@@ -91,7 +99,7 @@
   position: relative; top: 3px;
 }
 
-#logo {
+.logonavbar {
   height: 25px;
   margin-top: var(--logoheight);
   margin-left: var(--logoleftmargin);
@@ -131,7 +139,7 @@
     box-shadow: 0px 25px 20px -15px #111; 
 }
 
-h1 {
+.h1 {
   position: absolute;
   top: var(--h1top);
   right: var(--h1right);
@@ -141,7 +149,7 @@ h1 {
 
 }
 
-h2 {
+.h2 {
   position: absolute;
   top: var(--h2top);
   right: var(--h2right);
@@ -164,6 +172,58 @@ body {
   ;
 }
 
+.blankspace {
+  margin-bottom: 14vw;
+}
+
+.h3 {
+  text-align: center;
+  font-size: var(--h3fontsize);
+  margin-bottom: 14vw;
+}
+
+footer {
+  
+  
+   padding: 10px;
+   background-image: linear-gradient(to right,#0e1c28, #2d5678, #0e1c28);
+   color: white;
+   text-align: center;
+}
+
+.footerlogo {
+  height: 25px;
+}
+
+.blogimg{
+  width: 20vw;
+  height: 26vw;
+  border-radius: 8px;
+}
+
+.bloganchor {
+  
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bloglink {
+  display:inline-block;
+  width: 20vw;
+  height: 26vw;
+  
+}
+.blogcaption {
+    
+  background-image: linear-gradient(to right,#0e1c28, #2d5678, #0e1c28);
+  width:20vw;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+}
+.footerfontsize {
+  font-size: 10px;
+}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
