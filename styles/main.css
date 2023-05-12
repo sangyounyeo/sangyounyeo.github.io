@@ -1,18 +1,70 @@
 :root {
- 
+  --h1top: 205px;
+  --h1right: ;
+  --h1left: 50%;
+  --h1fontsize: 62px;
+  
+  --h2top: 360px;
+  --h2right: ;
+  --h2left: 50.5%;
+  --h2fontsize: 30px;
 
   --pagewidth: 1250px;
+  
+  --logoheight: -6px;
+  
+
+  --navspacing: 2vw;
+  --float: right;
+  --textposition: ;
+  
+ 
+  --navbarheight: -28px;
+  --fontsize: 20px;
+  --yinyangtop: 105px;
+
+
+--logoleftmargin: 7%;
+  --navbarright: 5%;
 }
 
-
-
-@media (max-width: 1600px) {
+@media (max-width: 1550px) {
   :root{
     --pagewidth: 80%;
-   
+
+    --h1fontsize: 4vw;
+    --h1top: 12.5vw;
+    --h1right: 18%;
+    --h1left: ;
+
+    --yinyangtop: 6vw;
+
+    --h2top: 22.5vw;
+    --h2right: ;
+    --h2left: 50.5%;
+    --h2fontsize: 2vw;
+
+    --navbarright: 5%;
+    --logoleftmargin: 7%;
   }
 
 }
+@media (max-width: 550px) {
+  :root{
+    --logoheight: -25px;
+  
+    --logoleftmargin: auto;
+ 
+    --fontsize: 17px;
+    
+    --navspacing: 3vw;
+    --float: ;
+    --textposition: center;
+    --navbarright: auto;
+    --navbarheight: 15px;
+  }
+}
+
 
 .navbar {
   background-image: linear-gradient(to right,#0e1c28, #2d5678, #0e1c28);
@@ -20,35 +72,51 @@
   border-bottom: 1.5px solid #173751;
   
 }
+.floatright {
+  float: var(--float);
+  position: relative; top: var(--navbarheight);
+  margin-right: var(--navbarright);
+  margin-left: auto;
+  text-align: var(--textposition);
+
+
+}
 
 .home {
-  float: right;
-  margin: -29px 3vw 0px 2vw;
-  padding: 5px 0px 0px 0px;
+  
+   margin-right: var(--navspacing);
+  margin-left: var(--navspacing);
   color: azure;
   text-decoration: none;
+  position: relative; top: 3px;
 }
 
 #logo {
   height: 25px;
-  margin: -5px 0px 0px 7%;
+  margin-top: var(--logoheight);
+  margin-left: var(--logoleftmargin);
+  margin-right: auto;
+  
   display: block;
   position: relative;
 }
 
 .navlink {
-  font-size: 20px;
-  float: right;
-  margin: -24px 3vw 15px 0px;
+  font-size: var(--fontsize);
+  
+  
+  margin-right: var(--navspacing);
+  margin-left: var(--navspacing);
+
   padding: 0px 0px 15x 0px;
   color: azure;
   text-decoration: none;
 }
 
 .navlinkcontact {
-  font-size: 20px;
-  float: right;
-  margin: -29px 8% 0px 0px;
+  font-size: var(--fontsize);
+  margin-right: var(--navspacing);
+  margin-left: var(--navspacing);
   padding: 5px 0px 15px 0px;
   color: azure;
   text-decoration: none;
@@ -59,13 +127,34 @@
   margin-right: auto;
    display: block; 
    border-radius: 8px;
-    position: relative;top: 4.5vw;
+    position: relative;top: var(--yinyangtop);
     box-shadow: 0px 25px 20px -15px #111; 
 }
 
-.homeintro {
-  background-image: linear-gradient(to right,#0e1c28, #2d5678, #0e1c28)
+h1 {
+  position: absolute;
+  top: var(--h1top);
+  right: var(--h1right);
+  left: var(--h1left);
+  color: white;
+  font-size: var(--h1fontsize);
+
 }
+
+h2 {
+  position: absolute;
+  top: var(--h2top);
+  right: var(--h2right);
+  left: var(--h2left);
+  color: white;
+  font-size: var(--h2fontsize);
+}
+
+.homeintro {
+  background-image: linear-gradient(to right,#0e1c28, #2d5678, #0e1c28);
+  position: relative;
+  text-align: center;
+  }
 
 body {
   margin: auto;
