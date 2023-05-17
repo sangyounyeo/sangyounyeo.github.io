@@ -15,7 +15,9 @@
 
   --pagewidth: 1250px;
   --navwidth: 1450px;
-  --blogwidth: 520px;
+  --tehouwidth: 520px;
+  --cssconwidth: 1250px;
+
   --blankspace: 180px;
 
 
@@ -42,7 +44,7 @@
   :root{
     --pagewidth: 80%;
     --navwidth: 95%;
-    
+    --cssconwidth: 80%;
 
     --h1fontsize: 4vw;
     --h1top: 12.5vw;
@@ -59,7 +61,7 @@
     --navbarright: 5%;
     --logoleftmargin: 7%;
     --h3fontsize: 2.7vw;
-    --h3bottom: 8vw;
+    --h3bottom: 70px;
 
     --linkimgwidth: 20vw;
     --linkimgheight: 33vw; 
@@ -69,7 +71,7 @@
 @media (max-width: 550px) {
   :root{
     --logoheight: -25px;
-    --blogwidth: 70%;
+    --tehouwidth: 70%;
     --logoleftmargin: auto;
     --blankspace: 12vw;
     --fontsize: 17px;
@@ -200,6 +202,14 @@ align-items: center;
   text-align: center;
 }
 
+.recentblog {
+
+  display: flex;
+  justify-content: center;
+align-items: center;
+  text-align: center;
+}
+
 .blankspace {
   margin-bottom: var(--blankspace);
 }
@@ -253,8 +263,19 @@ footer {
   margin-right: auto;
 }
 
-.blogillust {
-  width: var(--blogwidth);
+#tehoutaewaimg {
+  width: var(--tehouwidth);
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+   display: block; 
+   border-radius: 8px;
+    position: relative;top: 105px;
+    box-shadow: 0px 25px 20px -15px #111; 
+}
+
+#cssconceptimg {
+  width: var(--cssconwidth);
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -279,6 +300,19 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+.codestyle {
+  font-size: 14px;
+  color:lightskyblue;
+  background-color: gray;
+  padding: 2px 4px 2px 4px;
+  border-radius: 2px;
+
+}
+.codelist {
+  line-height: 20px;
+}
+
 .footerfontsize {
   font-size: 10px;
 }
@@ -294,3 +328,28 @@ footer {
 .blogparagraph {
   text-align: left;
 }
+
+.codeeg {
+  display:block;
+  font-size: 14px;
+  color:lightskyblue;
+  background-color: gray;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 2px 4px 2px 4px;
+  
+  
+}
+
+.codebox {
+display:block;
+  background-image: linear-gradient(to right,#0e1c28, #2d5678, #0e1c28);
+  color: white;
+  border-radius: 8px;
+}
+
+.h4 {
+  transform: translateX(10px) translateY(10px);
+  
+}
+

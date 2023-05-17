@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Concepts - Position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="/Users/sang/devacademy/sangyounyeo.github.io/styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  
+  </head>
+
+  <header>
+    <nav class="navbar">  
+      <section class="navsizing">
+        <a href="../index.html">
+          <img class="logonavbar" src="../img/logo.png" alt="logo">
+          </a>
+      <section class="floatright">
+      <a class="material-symbols-outlined home" href="../index.html">Home</a>
+      <a href="#tech" class="navlink">TECH</a> 
+      <a href="#core" class="navlink">CORE</a>
+      <a href="#about-me" class="navlink">ABOUT ME</a> 
+      <a href="#contact" class="navlinkcontact">CONTACT</a>
+    </section>
+    </section>
+    </nav>
+    </header>
+
+
+    <section class= "homeintro">
+      <h1 class="blogtitle">CSS Concepts - Position</h1>
+      <img id="cssconceptimg" src="../img/html-css-img.jpg" alt="stock photo of html and css">
+    </section>
+
+    <section class="blankspace">
+      <!---Blank white space-->
+     </section>
+    
+    <section class="blogtext fullpage">
+   
+      <h2> What are the differences between relative, absolute, and fixed positioning? </h2>
+   <section class="blogparagraph">
+    <h3>Properties</h3>
+    <p>
+      Cascading Style Sheets or CSS as it is more commonly called, is a stylesheet language which gives instructions for the browser to show the HTML in a specific way.
+    </p>
+    <p>
+      In CSS, properties assign a specific behaviour or style to an HTML element such as colour, font-size, and <strong>position</strong>.  
+    
+    <h3>Position</h3>
+    </p>
+      The <code class="codestyle">position</code> property can be applied to an element to tell the browswer which type of positioning method it should use to portray an element.
+    <p>
+      There are 5 main values the <code class="codestyle">position</code> property uses to control the position of elements on a web page:
+      <ul class="codelist">
+        <li><code class="codestyle">static</code></li>
+        <li><code class="codestyle">relative</code></li>
+        <li><code class="codestyle">absolute</code></li>
+        <li><code class="codestyle">fixed</code></li>
+        <li><code class="codestyle">sticky</code></li>
+      </ul>
+    </p>
+    <p> To assign a value to the position property, in css you place the value after "position:".</p>
+    <p> For example of you wanted to apply an absolute value you would type <code class="codestyle">position: absolute;</code></p>
+
+    <h3>Static</h3>
+    <p>By default, the position will be <code class="codestyle">static</code> if it is not assigned another value.</p>
+    <p>Elements will not take in other positioning properties like "top", "right", "bottom", and "left" and will be positioned according to the normal flow of the document.</p>
+    
+    <section class="codebox">
+      <h4 class="h4">EXAMPLE</h4>
+    <code class="codeeg">
+    .example {<br>
+      position: static;<br>
+    }
+    </code>
+    </section>
+
+    <h3>Relative</h3>
+    <p>Elements with the value <code class="codestyle">relative</code> are positioned according to the normal flow of the document.</p>
+    <p>However, different to the <code class="codestyle">static</code> position, can be moved "relative" to the normal position using "top", "right", "bottom", and "left" properties.</p>
+    <p>In the example below, the position of that element would be moved 10 pixels down as it adds 10 pixels to the top. You can think of it as it moving away the amount of units entered from the direction.</p>
+    <section class="codebox">
+      <h4 class="h4">EXAMPLE</h4>
+    <code class="codeeg">
+    .example {<br>
+      position: relative;<br>
+      top: 10px;<br>
+    }
+    </code>
+  </section>
+
+    <h3>Absolute</h3>
+    <p>Elements of the positional value <code class="codestyle">absolute</code> do not follow the normal flow of the document and are positioned relative to the closest positioned ancestor if it has any or the block containing the element.</p>
+    <p>As it doesn't follow the flow of the document, it leaves spaces which are filled by other elements and can overlap elements.</p>
+    <p>The example below would show the position of the element to have moved 20px down from the top of the ancestor and right side of the element would be on the right most side of the ancestor as it moved 0 pixels from the right. </p>
+    <section class="codebox">
+      <h4 class="h4">EXAMPLE</h4>
+    <code class="codeeg">
+      .relative-ancestor {<br>
+        position: relative;<br>
+        width: 200px;<br>
+        height: 100px;<br>
+      }<br><br>
+    .example {<br>
+      position: absolute;<br>
+      top: 20px;<br>
+      right: 0;<br>
+    }
+    </code>
+</section>
+
+  <h3>Fixed</h3>
+<p>Elements with the value <code class="codestyle">fixed</code> are positioned relative to the viewport or browser window. This means that it will remain "fixed" or in the same position even if the page is scrolled or the window is shrunk or enlarged.</p>
+<p>Like all the other position values except for static, you can use the "top", "right", "bottom", and "left" properties to position the element</p>
+<p>In the example below, the element would always be at the bottom right corner even if you scroll, shrink or enlarge the browser window. As the position of the element relative to the viewport, there is zero space between the element and the bottom and right side of viewport and the element will always be positioned at the bottom right of the viewport.</p>
+<section class="codebox">
+  <h4 class="h4">EXAMPLE</h4>
+<code class="codeeg">
+.example {<br>
+  position: fixed;<br>
+  bottom: 0;<br>
+  right: 0;<br>
+}
+</code>
+</section>
+
+<h3>Sticky</h3>
+  <p>The position of an element that is <code class="codestyle">sticky</code> is dependent on the user's scroll position.</p>
+  <p>The behaviour of the element switches between <code class="codestyle">relative</code> and <code class="codestyle">fixed</code>. It behaves as "fixed" when a the offset threshold is met but until then it acts like "relative".</p>
+  <p>Assume that the element in the example begins at half way down the viewport from the top of the page. As the position property <code class="codestyle">top</code> is set to 0, as the user scrolls down the page the element moves up the viewport relative to the page, but when the element hits to the top of the viewport it begins to act as it is fixed and remains at the top of the viewport unless it the page is scrolled up to the point which it originally was positioned relative to the document. </p>
+  <section class="codebox">
+    <h4 class="h4">EXAMPLE</h4>
+  <code class="codeeg">
+  .example {<br>
+    position: sticky;<br>
+    top: 0;<br>
+  }
+  </code>
+  </section>
+</section>
+      
+   
+<section class="blankspace">
+  <!---Blank white space-->
+ </section>
+  </section>
+  <footer>
+    <img class=footerlogo src="../img/logo.png" alt="logo">
+    <p><a href="#contact" class="navlinkcontact">CONTACT</a>|<a href="#about-me" class="navlink">ABOUT ME</a> </p>
+    <p class="footerfontsize">© Copyright 2023 Sang Youn Yeo</p>
+    <p class="footerfontsize">Created by Sang Youn Yeo</p>
+    
+  </footer>
+  </body>
+
+  
+  
+    
+
+ 
+</html>
