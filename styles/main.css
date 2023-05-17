@@ -227,6 +227,8 @@ footer {
    background-image: linear-gradient(to right,#0e1c28, #2d5678, #0e1c28);
    color: white;
    text-align: center;
+   margin-top: 1000px;
+
 }
 
 .footerlogo {
@@ -243,6 +245,7 @@ footer {
   
   text-align: center;
   margin-bottom: 50px;
+  
 }
 
 .bloglink {
@@ -353,3 +356,32 @@ display:block;
   
 }
 
+.about {
+ 
+  display: flex;
+  justify-content: center;
+align-items: center;
+  text-align: center;
+
+}
+
+#aboutphoto {
+ 
+  width:680px;
+  height: 680px;
+  border-radius: 20px;
+  box-shadow: 0px 25px 20px -15px #111;
+  transform: translateY(-125px);
+}
+
+#aboutmetext {
+ 
+
+  width:680px;
+  height: 680px;
+  background-image: linear-gradient(to right,#0e1c28, #2d5678, #0e1c28);
+  border-radius: 20px;
+  box-shadow: 0px 25px 20px -15px #111;
+  margin-left: 55px;
+  transform: translateY(125px);
+}
