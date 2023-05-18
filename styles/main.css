@@ -122,7 +122,7 @@
     --aboutwidth: 263px;
     --aboutminiheight: 213px;
     --aboutfont: 12px;
-    
+    --navspacing: 2vw;
     --abouttitle: 40px;
     --abouttextheight: 420px;
     --miniphotox: translateX(8px);
