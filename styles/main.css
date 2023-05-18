@@ -248,8 +248,9 @@ align-items: center;
 
   display: flex;
   justify-content: center;
-align-items: center;
+  align-items: center;
   text-align: center;
+  
 }
 
 .blankspace {
@@ -487,4 +488,8 @@ align-items: center;
 
  .aboutfont {
   font-size: var(--aboutfont);
+ }
+
+ h3 {
+  font-size: 25px;
  }
