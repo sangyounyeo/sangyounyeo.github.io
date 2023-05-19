@@ -69,16 +69,16 @@
 
     --h2top: 22.5vw;
     --h2right: ;
-    --h2left: 50.5%;
-    --h2fontsize: 2vw;
+    --h2left: 46.5%;
+    --h2fontsize: 2.45vw;
 
     --navbarright: 5%;
     --logoleftmargin: 7%;
     --h3fontsize: 2.7vw;
     --h3bottom: 70px;
 
-    --linkimgwidth: 20vw;
-    --linkimgheight: 25vw; 
+    --linkimgwidth: 27vw;
+    --linkimgheight: 34vw; 
 
     --aboutframeheight: 600px;
     --aboutframewidth: 467px;
@@ -101,17 +101,18 @@
     --fontsize: 17px;
     --h1top: 10vw;
     --h2top: 20vw;
-    --h2fontsize: 2.7vw;
-    --h2left: 46.5%;
+    --h2fontsize: 3vw;
+    --h2left: 42.5%;
     --navspacing: 3vw;
     --float: ;
     --textposition: center;
     --navbarright: auto;
     --navbarheight: 15px;
-    --h3fontsize: 2.7vw;
+    --h3fontsize: 3vw;
     --h3bottom: 8vw;
-
-    
+    --linkimgwidth: 150px;
+    --linkimgheight: 190px; 
+    --h3fontsize: 15px;
   }
 }
 
@@ -127,6 +128,11 @@
     --abouttextheight: 420px;
     --miniphotox: translateX(8px);
     --miniphoto3: translateX(-175px) translateY(140px);
+    --linkimgwidth: 105px;
+    --linkimgheight: 137px; 
+    --h2fontsize: 3.4vw;
+    --h2left: 34.5%;
+    --h1right: 20%;
   }
 }
 
@@ -244,14 +250,7 @@ align-items: center;
   text-align: center;
 }
 
-.recentblog {
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-}
 
 .blankspace {
   margin-bottom: var(--blankspace);
@@ -278,14 +277,38 @@ footer {
   height: 25px;
 }
 
+.recentblog {
+  position: relative;
+  
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.recentdiv{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+
 .bloglinkimg{
   width: var(--linkimgwidth);
   height: var(--linkimgheight);
   border-radius: 8px;
+  box-shadow: 0px 25px 20px -15px #111;
 }
 
+
+
+
 .bloganchor {
-  
+  position: relative;
+  right:38.5px;
+  width: var(--linkimgwidth);
+  height: auto;
   text-align: center;
   margin-bottom: 50px;
   
