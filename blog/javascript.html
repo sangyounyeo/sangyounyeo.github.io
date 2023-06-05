@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Fundamentals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <section class="navsizing">
+        <a href="../index.html#logonavbar">
+          <img id="logonavbar" src="../img/logo.png" alt="logo">
+        </a>
+        <section class="floatright">
+          <a class="material-symbols-outlined home" href="../index.html#logonavbar">Home</a>
+          <a href="#tech" class="navlink">TECH</a>
+          <a href="#core" class="navlink">CORE</a>
+          <a href="../index.html#aboutmetitle" class="navlink">ABOUT ME</a>
+          <a href="#contact" class="navlinkcontact">CONTACT</a>
+        </section>
+      </section>
+    </nav>
+  </header>
+
+  <section class="homeintro">
+    <h1 class="blogtitle">JavaScript Fundamentals</h1>
+    <img id="cssconceptimg" src="../img/JavaScript.jpg" alt="stock photo JavaScript">
+  </section>
+
+  <section class="blankspace">
+    <!---Blank white space-->
+  </section>
+
+  <section class="blogtext fullpage">
+    
+
+    <section class="blogparagraph">
+
+      <h3>The Connection between HTML, CSS, and JavaScript</h3>
+  <p>Imagine building a house. HTML forms the foundation, defining the structure and layout. It's like the blueprint of your web page. CSS acts as the interior designer, adding colours, styles, and visual enhancements. JavaScript, on the other hand, is the handyman that brings the house to life by handling dynamic aspects and interactivity. It's like adding the plumbing, electricity, and other functional elements that make the house engaging and functional.</p>
+
+  <h3>Control Flow and Loops</h3>
+  <p>The relationship between control flow and loops can be seen as the baking process. The process involves following a recipe step by step and performing repetitive actions. Control flow in programming is akin to the recipe instructions, ensuring tasks are executed in a specific order. Loops, on the other hand, are like whisking ingredients in a bowl. You continue whisking until the mixture reaches the desired consistency. Similarly, in programming, loops allow you to repeat a set of instructions until a specific condition is met, just like whisking until the desired consistency is achieved.</p>
+
+  <section class="codebox">
+    <h4 class="h4">EXAMPLE</h4>
+  <code class="codeeg">let isRecipeReady = true;<br>
+let whiskedConsistency = false;<br>
+<br>
+if (isRecipeReady) {<br>
+  console.log("Start baking process!");<br><br>
+  
+  for (let i = 1; i <= 3; i++) {<br>
+    console.log("Whisking the mixture...");<br><br>
+    
+    if (i === 3) {<br>
+      whiskedConsistency = true;<br>
+    }<br>
+  }<br>
+}</code></section>
+
+  <h3>Understanding the DOM</h3>
+  <p>The Document Object Model (DOM) is a virtual representation of a web page. Let's imagine you're a chef in a busy restaurant, and the menu is your DOM. You interact with it to access information, make changes, and respond to customer requests. In web development, JavaScript enables you to manipulate the DOM, dynamically updating content, modifying styles, and adding interactive elements. It's like updating the menu to showcase daily specials or taking orders from customers.</p>
+
+  <section class="codebox">
+    <h4 class="h4">EXAMPLE</h4>
+  <code class="codeeg">let heading = document.getElementbyID("todaysSpecial");<br>
+heading.textContent = "Spaghetti";<br>
+heading.style.color = "red";<br></code></section>
+
+  <h3>Accessing Data from Arrays and Objects</h3>
+  <p>Arrays and objects can be described to be like a recipe book and a pantry, respectively. An array resembles a recipe book, containing multiple recipes (elements). You can access each recipe by referring to its page number (index) or search for specific recipes based on criteria. On the other hand, an object is like a well-organized pantry, with various ingredients (properties). You access specific ingredients by their names (keys) and retrieve their corresponding values. Arrays and objects offer distinct ways to store and retrieve data, depending on your requirements.</p>
+
+  <section class="codebox">
+    <h4 class="h4">EXAMPLE</h4>
+  <code class="codeeg">// Array<br>
+let recipe = ["Kimchi Fried Rice", "Lasagne", "Sushi"];<br>
+console.log(recipe[0]); // Output is Kimchi Fried Rice<br><br>
+
+// Object<br>
+let ingredient = {<br>
+  name: "Carrot",<br>
+  type: "Vegetable",<br>
+  expiresIn: 10<br>
+};<br>
+console.log(ingredient.name); // Output is Carrot<br></code></section>
+
+  <h3>The Power of Functions</h3>
+  <p>Functions in programming can be compared to a set of instructions or a routine. They are blocks of code that perform a specific task when called. They help break down complex tasks into smaller, manageable parts, promoting reusability and modularity. Functions can receive inputs (arguments), execute operations, and return outputs, making them invaluable tools for problem-solving and organizing code.</p>
+
+  <section class="codebox">
+    <h4 class="h4">EXAMPLE</h4>
+  <code class="codeeg">function thanks(name) {<br>
+  console.log("Thank you, " + name + "!");<br>
+}<br><br>
+
+thanks("John"); // Output is Thank you, John!<br></code></section>
+
+
+  
+</section>
+  </section>
+  
+<footer>
+  <img class="footerlogo" src="../img/logo.png" alt="logo">
+  <p><a href="#contact" class="navlinkcontact">CONTACT</a>|<a href="../index.html#aboutmetitle" class="navlink">ABOUT ME</a> </p>
+  <p class="footerfontsize">© 2023 Sang Youn Yeo</p>
+  <p class="footerfontsize">Created by Sang Youn Yeo</p>
+</footer>
+</body>
+</html>
