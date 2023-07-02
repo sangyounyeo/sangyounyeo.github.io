@@ -580,3 +580,7 @@ align-items: center;
  h3 {
   font-size: 25px;
  }
+
+ .hide {
+  display: none;
+ }

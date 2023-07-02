@@ -9,42 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
 </head>
 
 <body>
   <header>
-    <nav id="navbar">
-      <section class="navsizing">
-        <a href="../index.html#logonavbar">
-          <img id="logonavbar" src="../img/logo.png" alt="logo">
-        </a>
-        <section class="floatright">
-          <a class="material-symbols-outlined home" href="../index.html#logonavbar">Home</a>
-          <div class="dropdown">
-            <a href="#tech" class="navlink">TECH</a>
-            <div class="dropdown-content">
-              <a href="../blog/html-css.html">CSS Concepts - Position</a>
-              <a href="../blog/javascript.html">JavaScript Fundamentals</a>
-              <a href="../blog/problem-solving.html">Problem Solving</a>
-              <a href="../blog/te-houtaewa-template.html">Te Houtaewa</a>
-              
-            </div>
-          </div>
-          <div class="dropdown">
-            <a href="#core" class="navlink">CORE</a>
-            <div class="dropdown-content">
-              <a href="../blog/identity-values-strengths.html">Identity, Values, and Strengths</a>
-              <a href="../blog/learning-plan.html">Learning Plan</a>
-              <a href="../blog/emotional-intelligence.html">Emotional Intelligence</a>
-              <a href="../blog/neuroplasticity.html">Neuroplasticity & Growth Mindset</a>
-              <a href="../blog/te-whare-tapa-wha.html"> Te Whare Tapa Wha</a>
-            </div>
-          </div>
-          <a href="#aboutmetitle" class="navlink">ABOUT ME</a>
-          <a href="#contact" class="navlinkcontact">CONTACT</a>
-        </div>
-      </div>
-    </nav>
+    
   </header>
   <section class="homeintro">
     <h1 class="blogtitle">Learning Plan</h1>
@@ -55,7 +25,7 @@
     <!---Blank white space-->
   </section>
 
-  <section class="blogtext">
+  <section id="foundation" class="blogtext">
     <h2>Time to formulate your Learning Plan!</h2>
     <section class="blogparagraph">
       <h3>What is your long term goal or career pathway?</h3>
@@ -75,15 +45,37 @@
       <p>My experience with the facilitation team has been great so far. Not much more I could expect from them. They encourage clear and open communication and have just generally been great. I would appreciate feedback and critism where it is needed once I hand my blog in!</p>
       <h3>Any scheduling information such as block-out times when you are committed to other things.</h3>
       <p>At the moment I am usually pretty free other than in the weekends, during 8am to 5:30pm when I am at work. Although for productivity reasons I have dumbed my phone down so I wont be reachable through discord or email unless I'm at my computer.</p>
+      <p>Click on the Button below to see my Bootcamp learning plan!</p>
+      <button id="bootcampButton">Bootcamp</button>
     </section>
   </section>
 
+  <section id="bootcamp" class="blogtext hide">
+    <h2>Learning Plan Part 2 - Bootcamp</h2>
+    <div class="blogparagraph">
+      <h3>What is your long term goal and/or career pathway?</h3>
+      <p>I am hoping to use the skills I gain during this course to begin a career as a programmer. I wish to make a positive impact in whichever career path I choose and also to secure a stable income to support my partner and whanau. Although I don't have a specific destination in mind at the moment, my goal is to get into full-time employment as soon as possible. With the right opportunities and continuous learning, I hope to create a successful and fulfilling career for myself.</p>
+      <h3>What do you think your biggest strengths and limitations will be in Bootcamp?</h3>
+      <p>Looking back on my strengths and weaknesses from the foundations phase, I think that they will continue during Bootcamp. One of my strengths is my dedication and willingness to work hard. I am determined to improve and have thankfully been seeing progress. However,  there is always room for improvement. I am committed to pushing myself further and continuously growing as a programmer.</p>
+      <h3>What do you think your biggest non-technical challenge at Bootcamp will be?</h3>
+      <p>One of the challenges I anticipate facing during Bootcamp is time management and assertiveness. I have noticed moments when I could have been more assertive and contributed to group discussions. I aim to overcome this by being more vocal about my ideas and opinions, effectively communicating with my team members, and ensuring that I play an active role in collaborative tasks. Additionally, managing my time effectively and prioritizing tasks will be crucial to meet deadlines and maintain a balanced work-life schedule.</p>
+      <h3>What non-technical skills - human skills - would you like to see developed in yourself while at Dev Academy?</h3>
+      <p>Two areas I am particularly focused on are assertiveness and confidence. Building confidence will help me overcome any self-doubt and hesitation, allowing me to take on challenges with a positive mindset and perform at my best.</p>
+      <h3>What are your expectations from the Bootcamp team?</h3>
+      <p>The Foundation Team has been great! I expect the team to continue providing feedback and constructive criticism!</p>
+      <h3>What are your expectations of yourself on Bootcamp</h3>
+      <p>During Bootcamp, I will hold myself accountable to a higher level of commitment. I am determined not to let down my cohort mates, whanau, and my partner. To achieve this, I will work harder, focusing on productivity and efficiency. I will schedule my week, ensuring that I have a well-structured plan in place, and effectively communicate it with others. By practicing mindfulness and active listening, I aim to build strong relationships with my peers and create a supportive and collaborative atmosphere. I am looking forward to working with everyone!</p>
+      <br>
+      <p>Click on the Button below to see my Foundations learning plan!</p>
+      <button id="foundationButton">Foundations</button>
+    </div>
+
+    
+
+  </section>
+
      
-      <footer>
-        <img class="footerlogo" src="../img/logo.png" alt="logo">
-        <p><a href="#contact" class="navlinkcontact">CONTACT</a>|<a href="../index.html#aboutmetitle" class="navlink">ABOUT ME</a> </p>
-        <p class="footerfontsize">© 2023 Sang Youn Yeo</p>
-        <p class="footerfontsize">Created by Sang Youn Yeo</p>
-      </footer>
+  <script src="../learningPlan.js"></script>
+      <script src="../script.js"></script>
     </body>
     </html>
